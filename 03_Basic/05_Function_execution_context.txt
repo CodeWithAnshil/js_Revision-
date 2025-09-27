@@ -1,0 +1,14 @@
+=> Function Execution Context <=
+1. Globlem Execution Context
+2. Function Execution Context.
+3. Eval Execution Context.
+
+{} => memory creation phase
+      Execution phase
+
+
+
+=> Call Stack
+  
+
+   
