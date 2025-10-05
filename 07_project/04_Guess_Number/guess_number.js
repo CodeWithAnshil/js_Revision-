@@ -5,7 +5,7 @@
   const message = document.querySelector('.message');
   const attempt = document.querySelector('.attempts');
   let attempts =0;
-  const maxAttempts = 5;
+  const maxAttempts = 6;
   
   submit.addEventListener('click',function(e){
     e.preventDefault()

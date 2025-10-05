@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>problem solution</title>
+  <style>
+     body{
+
+      color:aliceblue; 
+      background-color:#414141;
+
+     }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Hello Guys this is Anshil Maurya</h1>
+    <button id="btn1">start</button>
+    <button id="btn2">stop</button>
+  </div>
+</body>
+<script>
+  const start = document.querySelector('#btn1')
+  const stop = document.querySelector('#btn2')
+  const clc=function(str){
+    console.log(str,Date.now());
+  }
+  let intervalId
+  start.addEventListener('click',function(){ 
+     intervalId= setInterval(clc,1000,"hello");
+  })
+  stop.addEventListener('click',function(){
+    clearInterval(intervalId)
+  })
+   
+</script>
+</html>
