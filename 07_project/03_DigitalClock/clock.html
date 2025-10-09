@@ -4,49 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Clock</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(to right, #141E30, #243B55);
-      font-family: 'Courier New', monospace;
-    }
-
-    h1 {
-      color: #fff;
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
-    }
-
-    .clock {
-      background: #000;
-      padding: 40px 60px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-    }
-
-    .time {
-      color: #00ffea;
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 5px;
-      text-align: center;
-      text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 40px #00ffea;
-    }
-  </style>
+  <link rel="stylesheet" href="../00_main/navbar.css">
+  <link rel="stylesheet" href="clock.css">
 </head>
 <body>
-  <h1>Digital Clock</h1>
-  <div class="clock">
-    <div class="time">Digital CLock</div>
+  <div class="container">
+      <h1>Digital Clock</h1>
+      <div class="clock">
+        <div class="time">Digital CLock</div>
+      </div>
   </div>
 </body>
 <script src="clock.js"></script>
-  
+<script src="../00_main/navbar.js"></script>
 </script>
 </html>

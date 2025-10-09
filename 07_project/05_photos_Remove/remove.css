@@ -1,0 +1,40 @@
+
+  body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    background: #414141;
+  }
+  img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  #image{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    align-items: center;
+  }
+  li{
+    list-style-type:none;
+  }
+  .btn {
+    padding: 10px 20px;
+    margin: 10px 50px;
+    
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display:grid;
+  }
+  .remove-btn {
+    background: #ff3d00;
+    color: #fff;
+  }

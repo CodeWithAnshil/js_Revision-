@@ -1,4 +1,4 @@
-# ---------Project Related to DOM--------
+# Project Related To DOM
 
 ## Project link
 [Click here](https://github.com/CodeWithAnshil/js_Revision-)
@@ -114,5 +114,64 @@ const form = document.querySelector('form')
       removeIt.remove() 
     }
   })
+  
+
+```
+## Project 6
+
+```javascript
+const randomColor=function(){
+  const hex = "0123456789ABCDEF";
+  let  color="#"
+  for(let i=0;i<6;i++){
+    color+=hex[Math.floor(Math.random()*16)]
+  }
+  return color
+}
+let intervalId
+const startChangeBgColor = function(){
+  if(!intervalId){
+    intervalId = setInterval(colorBgChange,1000);
+  }
+
+  function colorBgChange(){
+   document.body.style.backgroundColor=randomColor();
+  }
+}
+
+const stopChangeBgColor = function(){
+  clearInterval(intervalId);
+  intervalId=null;
+}
+
+ document.getElementById('startBtn').addEventListener('click',startChangeBgColor);
+
+ document.getElementById('stopBtn').addEventListener('click',stopChangeBgColor);
+
+```
+
+## Project 7
+
+```javascript
+const insert = document.getElementById('insert')
+// console.log('kam kar raha hai')
+window.addEventListener('keydown',(e)=>{
+  insert.innerHTML=`
+   <div class='class'>
+    <table>
+      <tr>
+        <th>Key</th>
+        <th>KeyCode</th>
+        <th>Code</th>
+      </tr>
+      <tr>
+        <td>${e.key}</td>
+        <td>${e.keyCode}</td>
+        <td>${e.code}</td>
+      </tr>
+    </table>
+   </div>
+  `
+})
 
 ```
