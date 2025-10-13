@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Master</title>
+  <link rel="stylesheet" href="quize.css">
+</head>
+<body>
+  <div class="container">
+    <div class="quiz-box">
+      <h1 class="title">Quiz Master 🧠</h1>
+      <div id="question-box">
+        <h2 id="question">Question text here</h2>
+        <ul id="options" class="options"></ul>
+      </div>
+      <div class="btn-group">
+        <button id="nextBtn" class="btn" disabled>Next</button>
+        <button id="restartBtn" class="btn secondary">Restart</button>
+      </div>
+      <p id="progress" class="progress">Question 1 of 5</p>
+    </div>
+
+    <div class="result-box hidden" id="result-box">
+      <h2>Quiz Completed! 🎉</h2>
+      <p id="score">Your Score: 0 / 0</p>
+      <button id="playAgain" class="btn">Play Again</button>
+    </div>
+  </div>
+</body>
+<script src="quize1.js"></script>
+</html>

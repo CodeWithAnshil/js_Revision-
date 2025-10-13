@@ -5,7 +5,8 @@ const links ={
   four:"../04_Guess_Number/guess_number.html",
   five:"../05_photos_Remove/remover.html",
   six:"../06_Background_color_changer/Bkd_Color_Changer.html",
-  seven:"../07_keybord_testing/keyboard.html"
+  seven:"../07_keybord_testing/keyboard.html",
+  eight:"../08_To_Do_list/TO_Do_list.html"
 }
 
 Object.entries(links).forEach(([id, path]) => {
