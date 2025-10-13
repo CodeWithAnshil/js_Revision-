@@ -10,15 +10,14 @@
 body {
   background: linear-gradient(135deg, #667eea, #764ba2);
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   color: #fff;
 }
 
 .container {
   width: 90%;
   max-width: 600px;
+  margin: 10% auto;
 }
 
 .quiz-box, .result-box {

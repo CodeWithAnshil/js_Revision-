@@ -6,7 +6,11 @@ const links ={
   five:"../05_photos_Remove/remover.html",
   six:"../06_Background_color_changer/Bkd_Color_Changer.html",
   seven:"../07_keybord_testing/keyboard.html",
-  eight:"../08_To_Do_list/TO_Do_list.html"
+  eight:"../08_To_Do_list/TO_Do_list.html",
+  nine:"../09_Calculator/calculator.html",
+  ten:"../10_Weather_App/weather.html",
+  eleven:"../11_Movie_search/movie_search.html",
+  twelve:"../12_Quiz/quiz.html"
 }
 
 Object.entries(links).forEach(([id, path]) => {
