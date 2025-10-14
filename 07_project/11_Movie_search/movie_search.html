@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎥 Movie Search App</title>
-  <link rel="stylesheet" href="movie_search.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="../00_main/navbar.css">
+    <link rel="stylesheet" href="movie_search.css">
 </head>
 <body>
-  <div class="container"> 
-    <h1>🎬 Movie Search</h1>
-    <input type="text" id="searchInput" placeholder="Enter movie name..." />
-    <button id="searchBtn">Search</button>
-
-    <div id="movieContainer"></div>
-
-    <div class="pagination">
-      <button id="prevBtn">⬅ Prev</button>
-      <span id="pageNum">1</span>
-      <button id="nextBtn">Next ➡</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Movie Recommendation System</h1>
+        
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input id="text" type="text" placeholder="Search for a movie...">
+          <button id="searchBtn">Search</button>
+        </div>
+        <!-- Movies Section -->
+        <h2>Movies</h2>
+        <div class="movie-grid hidden"></div>
+        </div>
+        <div id="movie-details" class="movie-details hidden"></div>
+        </div>
 </body>
+<script src="movie_search.js"></script>
+<script src="../00_main/navbar.js"></script>
 </html>

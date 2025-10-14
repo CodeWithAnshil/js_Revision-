@@ -1,14 +1,13 @@
 body {
   background: linear-gradient(135deg, #89f7fe, #66a6ff);
   font-family: "Poppins", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  height: 130vh;
   margin: 0;
+  padding: 0;
 }
 
 .calculator {
+  margin: 15px auto;
   background: white;
   padding: 20px;
   border-radius: 20px;
