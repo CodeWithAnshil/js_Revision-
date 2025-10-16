@@ -1,0 +1,141 @@
+/* 🩵 Fixed Background */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* dark navy */
+  color: #fff;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* 📝 Title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #f9fafb;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* ✍️ Input Section */
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 📒 Attractive Input Box */
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #111827;
+  background: #ffffff;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+}
+
+/* 🔘 Add Note Button */
+#inputBtn {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#inputBtn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #06b6d4, #9333ea);
+}
+
+/* 🧠 Notes Grid */
+.notes-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* 🟡 Sticky Note Style */
+.note-card {
+  position: relative;
+  background: #fff9c4; /* light yellow sticky note */
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px 15px 15px;
+  text-align: left;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+  transform: rotate(-1.5deg);
+  transition: all 0.3s ease;
+}
+
+.note-card:nth-child(even) {
+  background: #ffecb3; /* alternate sticky shade */
+  transform: rotate(1.5deg);
+}
+
+.note-card:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 🩵 Note Text */
+#text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2d3748;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* 🎨 Note Actions (top-right corner) */
+.note-actions {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  font-size: 1.2rem;
+}
+
+/* ✍️ + 🗑️ Icons */
+.note-actions .edit::before {
+  content: "✍️";
+}
+
+.note-actions .delete::before {
+  content: "🗑️";
+}
+
+.note-actions span {
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.note-actions span:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}

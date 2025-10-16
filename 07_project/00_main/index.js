@@ -10,7 +10,8 @@ const links ={
   nine:"../09_Calculator/calculator.html",
   ten:"../10_Weather_App/weather.html",
   eleven:"../11_Movie_search/movie_search.html",
-  twelve:"../12_Quiz/quiz.html"
+  twelve:"../12_Quiz/quiz.html",
+  thirteen:"../13_Note_App/note.html"
 }
 
 Object.entries(links).forEach(([id, path]) => {
